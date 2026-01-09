@@ -6,6 +6,17 @@ public class Car {
     private int doors = 2;
     private boolean convertible = true;
 
+    public Car() {
+        System.out.println("Empty constructor called");
+    }
+
+    public Car(String make, String model, String color, int doors, boolean convertible) {
+        System.out.println("Car constructor with parameters called");
+        this.make = make;
+        this.color = color;
+        this.doors = doors;
+        this.convertible = convertible;
+    }
     public String getMake() {
         return make;
     }

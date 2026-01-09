@@ -13,13 +13,8 @@ public class Main {
         System.out.println("model = " + car.getModel());
         car.describeCar();
 
-        Car targa = new Car();
-        targa.setMake("Porsche");
-        targa.setModel("Targa");
-        targa.setDoors(2);
-        targa.setConvertible(false);
-        targa.setColor("red");
+        Car targa = new Car("Porsche", "Targa", "Red", 2,false);
 
-        targa.describeCar();
+        System.out.println(targa.getMake());
     }
 }
