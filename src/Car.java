@@ -7,6 +7,7 @@ public class Car {
     private boolean convertible = true;
 
     public Car() {
+        this("Porshe", "Tesla","Red", 2, true);
         System.out.println("Empty constructor called");
     }
 
@@ -17,6 +18,15 @@ public class Car {
         this.doors = doors;
         this.convertible = convertible;
     }
+
+    public Car(String model, String color, int doors, boolean convertible) {
+        this("BMW", model, color, doors, convertible);
+//        this.model = model;
+//        this.color = color;
+//        this.doors = doors;
+//        this.convertible = convertible;
+    }
+
     public String getMake() {
         return make;
     }

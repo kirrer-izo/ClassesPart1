@@ -1,20 +1,9 @@
 public class Main {
 
     public static void main(String[] args) {
-        Car car = new Car();
-        car.setMake("orsche");
-        car.setModel("BMW");
-        car.setDoors(2);
-        car.setConvertible(true);
-        car.setColor("black");
+        Car car = new Car("GTR", "Black", 2, true);
 
-
-        System.out.println("make = " + car.getMake());
-        System.out.println("model = " + car.getModel());
         car.describeCar();
 
-        Car targa = new Car("Porsche", "Targa", "Red", 2,false);
-
-        System.out.println(targa.getMake());
     }
 }
